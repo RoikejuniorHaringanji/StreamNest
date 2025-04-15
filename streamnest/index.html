@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreamNest</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">StreamNest</div>
+    <input type="text" id="searchInput" placeholder="Search movies or TV shows...">
+    <button onclick="searchContent()">Search</button>
+  </header>
+  <main>
+    <!-- ✅ Hero Section: Welcome Message -->
+    <section id="welcome">
+      <h1>Welcome to StreamNest</h1>
+      <p>Your hub for discovering, tracking, and reviewing movies and TV shows. Designed for movie lovers, casual viewers, and entertainment enthusiasts.</p>
+    </section>
+
+    <!-- ✅ Trending Section -->
+    <section id="trending">
+      <h2>Trending Now</h2>
+      <div class="grid" id="trendingGrid"></div>
+    </section>
+
+    <!-- ✅ Search Results Section -->
+    <section id="searchResults" class="hidden">
+      <h2>Search Results</h2>
+      <div class="grid" id="searchGrid"></div>
+    </section>
+
+    <!-- ✅ Features Section -->
+    <section id="features">
+      <h2>What You Can Do</h2>
+      <ul>
+        <li>🔍 Search for movies or TV shows by title or keywords.</li>
+        <li>📈 Discover trending & popular titles in real-time.</li>
+        <li>🎭 Filter by genre: comedy, horror, documentary, and more.</li>
+        <li>🎬 View detailed info including trailers and cast.</li>
+        <li>📌 Create a personal watchlist and mark favorites.</li>
+        <li>⭐ Leave ratings and reviews on titles you've seen.</li>
+        <li>🤖 Get recommendations based on your watch history.</li>
+        <li>▶️ Watch trailers embedded from YouTube instantly.</li>
+      </ul>
+    </section>
+  
+    <!-- ✅ Call to Action -->
+    <section id="cta">
+      <h2>Join StreamNest</h2>
+      <p>Create an account to start saving favorites, leaving reviews, and getting personalized recommendations.</p>
+      <button onclick="openLoginModal()">Login / Register</button>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 StreamNest. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ Use the correct file names -->
+  <script src="main.js"></script>
+  <script src="counter.js"></script>
+</body>
+</html>
